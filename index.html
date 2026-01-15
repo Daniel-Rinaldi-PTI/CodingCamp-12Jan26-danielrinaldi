@@ -9,24 +9,85 @@
 
     <!-- Link to the CSS file -->
     <link rel="stylesheet" href="css\style.css">
-    <!-- Link to the JavaScript file -->
-    <script src="js\script.js"></script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
     <!--Header section -->
-    <header>
-        <h1>Welcome to My Web Page</h1>
+    <header class="main-header p-[8px]">
+        
+        <!--logo-->
+        <div class="logo"></div>
+        
+        <!-- Navigation menu -->
+        <nav class="flex">
+            <a class="border p-2 rounded" href="#Home">Home</a>
+            <a class="border p-2 rounded" href="#Portfolio">Portfolio</a>
+            <a class="border p-2 rounded" href="#Profile">Profile</a>
+            <a class="border p-2 rounded" href="#MessageMe">Message Me</a>
+        </nav>
     </header>
+
+    <hr/>
 
     <!-- Main content -->
     <main>
-        <p>This is a sample web page to demonstrate HTML structure.</p>
+        
+        <!-- Home section -->
+        <section id="Home" class="min-h-[500px] text-center content-center p-4">
+            <h1 class="text-3xl font-bold mb-4" id="welcome">Welcome to My Portfolio</h1>
+            <p class="mb-4">This is a demo portfolio page created by Daniel.</p>
+        </section>  
+
+        <hr/>
+
+        <!-- Portfolio section -->
+        <section id="Portfolio" class="min-h-[500px] p-4 text-center content-center">
+            <h2 class="text-2xl font-bold mb-4">My Projects</h2>
+            <ul class="list-disc pl-5">
+                <li class="mb-2">Project 1: Description of project 1.</li>
+                <li class="mb-2">Project 2: Description of project 2.</li>
+                <li class="mb-2">Project 3: Description of project 3.</li>
+            </ul>   
+        </section>
+
+        <hr/>
+
+        <!-- Profile section -->
+        <section id="Profile" class="min-h-[500px] p-4 text-center content-center">
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+            <p class="mb-4">Hello! I'm Daniel, a web developer with a passion for creating beautiful and functional websites.</p>  
+        </section>
+
+        <hr/>
+
+        <!-- Message Me section -->
+        <section id="MessageMe" class="min-h-[500px] p-4 text-center content-center">
+            <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+            <form class="flex flex-col max-w-sm mx-auto" id="pesan">
+                <label for="name" class="mb-2">Name:</label>
+                <input type="text" id="name" name="name" class="border p-2 mb-4">
+
+                <label for="email" class="mb-2">Email:</label>
+                <input type="email" id="email" name="email" class="border p-2 mb-4">
+
+                <label for="message" class="mb-2">Message:</label>
+                <textarea id="message" name="message" class="border p-2 mb-4"></textarea>
+
+                <button type="submit" class="bg-blue-500 text-white p-2 rounded">Send Message</button>
+            </form>
+        </section>
+
+    <!-- Link to the JavaScript file -->
+    <script src="js\script.js"></script>
+
     </main>
 
     <!-- Footer section -->
     <footer>
-        <p>&copy; 2024 My Web Page</p>
+        <p class="text-center p-4 bg-gray-200">&copy; 2026 Portfolio Daniel</p>
     </footer>   
 </body>
 

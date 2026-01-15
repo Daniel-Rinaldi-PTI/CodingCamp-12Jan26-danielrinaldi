@@ -1,0 +1,14 @@
+.logo {
+    width: 75px;
+    height: 75px;
+    background-color: lightgray;
+    border-radius: 50%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCLOw_sHm70oyoo5qZOYzUdWYhU4_aUMXaFQ&s);
+    background-size: cover;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
